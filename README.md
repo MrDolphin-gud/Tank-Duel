@@ -54,8 +54,9 @@ Oyun atmosferini güçlendirmek için 3D Spatial Audio (Surround) kullanılmış
 - **Motor Sesi:** Tank hızlandıkça motorun sesi artar. Durunca sessizleşir.
 - **Taret Sesi:** Sadece taret dönerken mekanik ses çalar.
 - **Patlamalar:** Mayın patlamaları PlayClipAtPoint kullanılarak patlamanın olduğu konumdan duyulur.
-- **Ayarlar:** Ana menüden Müzik ve Efekt sesleri ayrı ayrı ayarlanabilir ve kaydedilir (PlayerPrefs).
+- **Ayarlar:** Ana menüden Müzik ve Efekt sesleri ayrı ayrı ayarlanabilir ve kaydedilir.
 
 ## Yapay Zeka 
 
-Şu anki sürümde rakip tank temel fizik ve can sistemi bileşenlerine sahiptir. Projenin ilerleyen aşamalarında rakip tankın kontrolü Unity ML-Agents kullanılarak eğitilmiş bir Yapay Zeka ajanına evrilecektir.
+Şu anki sürümde rakip tank temel fizik ve can sistemi bileşenlerine sahiptir. Projenin ilerleyen aşamalarında rakip tankın kontrolü bir Yapay Zeka ajanına evrilecektir.
+
