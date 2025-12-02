@@ -6,7 +6,7 @@ Unity ile geliştirilmiş fizik tabanlı mekaniklere sahip bir Tank Savaşı oyu
 
 Oyunu tarayıcı üzerinden oynamak için tıklayın:
 
-https://mrdolph1n.itch.io/tank-battle?secret=4psLwFTEfGQBhWTsBxjp36dX1BE
+https://mrdolph1n.itch.io/tank-duel?secret=op79GSR9ibEX3M87286qDZpFdI
 
 ## Proje Hakkında
 
@@ -59,5 +59,6 @@ Oyun atmosferini güçlendirmek için 3D Spatial Audio (Surround) kullanılmış
 ## Yapay Zeka 
 
 Şu anki sürümde rakip tank temel fizik ve can sistemi bileşenlerine sahiptir. Projenin ilerleyen aşamalarında rakip tankın kontrolü bir Yapay Zeka ajanına evrilecektir.
+
 
 
