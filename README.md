@@ -13,7 +13,8 @@ https://mrdolph1n.itch.io/tank-duel?secret=op79GSR9ibEX3M87286qDZpFdI
 Bu proje, Unity Oyun Motoru kullanılarak geliştirilmiştir. Oyuncu, bir tankı kontrol ederek çeşitli yetenekler ve fizik tabanlı etkileşimler kullanarak hayatta kalmaya çalışır.
 
 ## Mekanikler
-Oyuncu tankı ile Düşman tankı aynı özelliklere sahip ancak birbirini etkilemiyor.
+Oyuncu tankı ile Düşman tankı aynı özelliklere sahip ancak ɓağımsız çalışıyorlar.
+
 ### Ateş Etme
 Fizik tabanlı mermi fırlatma sistemi.
 
@@ -59,6 +60,7 @@ Oyun atmosferini güçlendirmek için 3D Spatial Audio (Surround) kullanılmış
 ## Yapay Zeka 
 
 Şu anki sürümde rakip tank temel fizik ve can sistemi bileşenlerine sahiptir. Projenin ilerleyen aşamalarında rakip tankın kontrolü bir Yapay Zeka ajanına evrilecektir.
+
 
 
 
