@@ -2,17 +2,6 @@
 
 Unity ile geliştirilmiş Q-Learning tabanlı yapay zekâ içeren fizik tabanlı bir tank savaşı oyunu.
 
-## İçerik
-
-1. [Oyun Hakkında](#oyun-hakkinda)
-2. [Kontroller](#kontroller)
-3. [Mekanikler](#mekanikler)
-4. [Yapay Zeka Sistemi](#yapay-zeka-sistemi)
-5. [Dosya Yapısı](#dosya-yapisi)
-6. [AI Model Yükleme](#ai-model-yukleme)
-7. [Konfigürasyon](#konfigrasyon)
-8. [Ödül ve Ceza Sistemi](#odul-ve-ceza-sistemi)
-
 ## Oyun Hakkında
 
 Tank Duel, oyuncunun Q-Learning algoritması ile eğitilmiş yapay zeka tankına karşı savaştığı bir oyundur. Oyuncu ve AI tankları aynı yeteneklere sahiptir: ateş etme, dash, mayın bırakma ve enerji kalkanı.
