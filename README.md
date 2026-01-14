@@ -128,13 +128,13 @@ AI tankı 14 farklı giriş kullanır:
 
 ### Model Dosyası: RLBrain.json
 
-**Yüklenecek Dosya: ** RLBrain.json
+**Yüklenecek Dosya:** RLBrain.json
 
-**Konum: **
+**Konum:**
 - Unity Editor: Assets/RLBrain.json
 - Build: %APPDATA%\..\LocalLow\Bursa Teknik Üniversitesi\Tank Duel\RLBrain.json
 
-**Dosya İçeriği: **
+**Dosya İçeriği:**
 - inputCount: Durum vektörünün boyutu (14)
 - actionCount: Eylem sayısı (11)
 - qTableEntries: Durum-Q değerleri eşlemeleri
