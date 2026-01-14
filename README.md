@@ -131,8 +131,8 @@ AI tankı 14 farklı giriş kullanır:
 **Yüklenecek Dosya:** RLBrain.json
 
 **Konum:**
-- Kaynak kod: Assets/RLBrain.json
-- Build: %APPDATA%\..\LocalLow\Bursa Teknik Üniversitesi\Tank Duel\RLBrain.json
+-  Eğitilmiş AI: Editörde; Assets/RLBrain.json Build'da; StreamingAssets/RLBrain.json
+- Yeni Oluşturulacak AI: %APPDATA%\..\LocalLow\Bursa Teknik Üniversitesi\Tank Duel\RLBrain.json
 
 **Dosya İçeriği:**
 - inputCount: Durum vektörünün boyutu (14)
