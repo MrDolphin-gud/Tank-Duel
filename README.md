@@ -131,7 +131,7 @@ AI tankı 14 farklı giriş kullanır:
 **Yüklenecek Dosya:** RLBrain.json
 
 **Konum:**
-- Unity Editor: Assets/RLBrain.json
+- Kaynak kod: Assets/RLBrain.json
 - Build: %APPDATA%\..\LocalLow\Bursa Teknik Üniversitesi\Tank Duel\RLBrain.json
 
 **Dosya İçeriği:**
