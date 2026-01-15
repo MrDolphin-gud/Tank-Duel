@@ -54,8 +54,8 @@ public class MainMenuManager : MonoBehaviour
                 string[] pathsToCheck = new string[]
                 {
                     Path.Combine(Application.dataPath, "StreamingAssets", "RLBrain.json"), // Öncelik 1: StreamingAssets
-                    Path.Combine(Application.streamingAssetsPath, "RLBrain.json"), // Öncelik 2: StreamingAssets (alternatif yol)
-                    Path.Combine(Application.dataPath, "RLBrain.json") // Öncelik 3: Assets (fallback)
+                    Path.Combine(Application.streamingAssetsPath, "RLBrain.json"), // Öncelik 2: StreamingAssets 
+                    Path.Combine(Application.dataPath, "RLBrain.json") // Öncelik 3: Assets 
                 };
                 
                 Debug.Log($"[MainMenu] Model arama basladi. Application.dataPath: {Application.dataPath}");
@@ -83,7 +83,7 @@ public class MainMenuManager : MonoBehaviour
                 foundPath = Path.Combine(Application.streamingAssetsPath, "RLBrain.json");
                 Debug.Log($"[MainMenu] WebGL: StreamingAssets'te model oldugu varsayiliyor (gercek kontrol QLearningBrain'de yapilacak): {foundPath}");
                 #else
-                // Diğer platformlar (Windows, Mac, Linux build)
+                // Diğer platformlar 
                 string streamingAssetsPath = Path.Combine(Application.streamingAssetsPath, "RLBrain.json");
                 hasModel = File.Exists(streamingAssetsPath);
                 if (hasModel)
