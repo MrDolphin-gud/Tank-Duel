@@ -103,7 +103,7 @@ public class EnemyController : MonoBehaviour
             if (effectsSource && fireSound) effectsSource.PlayOneShot(fireSound);
             
             // Mermi yönünü taretin yönüne göre ayarla
-            // turretTransform varsa onun yönünü kullan, yoksa firePoint'in yönünü kullan
+            // turretTransform varsa onun yönünü kullan yoksa firePoint'in yönünü kullan
             Vector3 fireDirection;
             Quaternion fireRotation;
             
@@ -115,7 +115,7 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                // Fallback: firePoint'in yönünü kullan
+                firePoint'in yönünü kullan
                 fireDirection = firePoint.forward;
                 fireRotation = firePoint.rotation;
             }
@@ -230,16 +230,11 @@ public class EnemyController : MonoBehaviour
             // Çarpışma normal vektörünü kontrol et - zemin mi duvar mı?
             Vector3 collisionNormal = collision.contacts[0].normal;
             
-            // Eğer normal yukarı bakıyorsa (y > 0.7) bu zemindir, ceza verme
-            if (Mathf.Abs(collisionNormal.y) > 0.7f)
-            {
-                return; // Zemin çarpışması - ceza verme
-            }
             
             QLearningAgent agent = GetComponent<QLearningAgent>();
             if (agent != null)
             {
-                // Küçük ceza ver (0-10 arası ölçeklendirildi)
+                // Küçük ceza ver 
                 agent.Punish(2f);
                 
                 // Çarpışma yönünü hesapla ve hint ver
