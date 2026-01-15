@@ -33,12 +33,12 @@ public class Health : MonoBehaviour
     
     public void TakeDamage(float amount, GameObject damageSource = null)
     {
-        // OYUNCU SONSUZ CAN KONTROLÜ - En başta kontrol et
+        // OYUNCU SONSUZ CAN KONTROLÜ
         if (isInvincible && gameObject.CompareTag("Player"))
         {
             // Sonsuz can modunda hasar almaz canı da düşürmez
-            // Sadece log yaz ve çık
-            Debug.Log($"OYUNCU SONSUZ CAN! Hasar engellendi: {amount}");
+           
+            
             
             // Canı minimum %10'da tut (görsel olarak)
             if (currentHealth < maxHealth * 0.1f)
@@ -60,8 +60,8 @@ public class Health : MonoBehaviour
             // Kalkan ile hasar engelleme ödülü (Q-Learning)
             if (qlAgent != null)
             {
-                qlAgent.AddShieldBlockReward(3f); // Kalkan ile hasar engelleme = +3 puan (0-10 arası)
-                Debug.Log($"{gameObject.name} kalkan ile hasarı engelledi! +3 Reward");
+                qlAgent.AddShieldBlockReward(3f); // Kalkan ile hasar engelleme  +3 puan 
+                
             }
             
             return;
@@ -79,14 +79,14 @@ public class Health : MonoBehaviour
         // Konsola hasar bilgisini yazar
         Debug.Log(gameObject.name + " hasar aldı. Kalan: " + currentHealth);
         
-        // --- OYUNCUDAN HASAR ALMA CEZASI (AI tankları için) ---
+        
         if (damageSource != null && qlAgent != null)
         {
             bool isFromPlayer = damageSource.CompareTag("Player");
             
             if (isFromPlayer)
             {
-                // Oyuncudan hasar alındı - AI tankına ceza ver (0-10 arası)
+                // Oyuncudan hasar alındı - AI tankına ceza ver 
                 float penalty = Mathf.Clamp(amount * 0.2f, 1f, 5f);
                 qlAgent.Punish(penalty);
                 Debug.Log($"{gameObject.name} oyuncudan {amount} hasar aldı! -{penalty:F1} Ceza");
@@ -160,7 +160,7 @@ public class Health : MonoBehaviour
                 rb.angularVelocity = Vector3.zero;
             }
             
-            // Kısa bir gecikme ekle (ölüm animasyonu/efekti için)
+            // Kısa bir gecikme 
             StartCoroutine(LoadMainMenuAfterDelay(2f));
         }
         else
